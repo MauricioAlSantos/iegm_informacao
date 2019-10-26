@@ -1,33 +1,30 @@
 <template>
   <v-app>
-    <v-app-bar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        text
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
-      </v-btn>
-    </v-app-bar>
+    
+      <v-app-bar app elevation="1" height="100" >
+            <v-container fill-height  pa-1 ma-1 class="v-row">
+                <img height="85" style="sm-height:40px" :src="require('./assets/iegm_icon.svg')">
+                <v-container class="col">
+                    <h3 class="font-weight-medium inline">Índice de Efetividade da Gestão Municipal</h3>
+                    <h4 class="font-weight-regular">Tribunal de Contas do Estado do Maranhão</h4>
+                    <span></span>
+                </v-container>
+            </v-container>
+        </v-app-bar>   
 
     <v-content>
-      <HelloWorld/>
+      <Ranking></Ranking>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
-
+/* import HelloWorld from './components/HelloWorld'; */
+import Ranking from './components/Ranking';
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    Ranking
   },
   data: () => ({
     //
