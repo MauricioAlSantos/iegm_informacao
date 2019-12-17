@@ -27,7 +27,7 @@
                 <img  :class="{'logo-app-bar': $vuetify.breakpoint.xs,
                 'logo-app-bar-lg':$vuetify.breakpoint.sm,'logo-app-bar-lg':$vuetify.breakpoint.lg}"
 
-                :src="require('./assets/img/iegm_2020.svg')">
+                :src="require('../../assets/img/iegm_2020.svg')">
                 <v-container class="col">
                     <div :class="{'heading-app': $vuetify.breakpoint.xs,
                     'heading-app-lg':$vuetify.breakpoint.smAndUp}" class="font-weight-medium inline">Índice de Efetividade da Gestão Municipal</div>
@@ -49,7 +49,7 @@
 
 <script>
 /* import HelloWorld from './components/HelloWorld'; */
-import Ranking from './components/Ranking';
+import Ranking from '@/components/Ranking';
 export default {
   name: 'App',
   components: {
