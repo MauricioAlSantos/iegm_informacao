@@ -1,4 +1,4 @@
-# iegm_util
+# iegm_informacao
 
 ## Project setup
 ```
